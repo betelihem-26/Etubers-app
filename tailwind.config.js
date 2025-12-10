@@ -1,25 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // CORRECTED: This now points to your index.html and all files inside the src/ folder.
+  // The content array tells Tailwind where to find your utility classes (in index.html and all files in the src/ folder)
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
         // Deep Navy/Dark Purple Background
         "background-dark": "#1A1A2E",
-        // Vibrant Violet/Purple Accent (for cards/badges/primary links)
+        // Vibrant Violet/Purple Accent
         "primary-purple": "#6C5CE7",
-        // Gold/Yellow Accent (for CTAs and highlights)
+        // Gold/Yellow Accent
         "accent-gold": "#FFD700",
         // Subtle Gray for secondary text
         "text-light": "#E0E0E0",
       },
       fontFamily: {
-        // Using Inter as a default
         sans: ["Inter", "sans-serif"],
       },
       boxShadow: {
-        // Custom shadow for emphasis
         "3xl": "0 35px 60px -15px rgba(108, 92, 231, 0.4)",
       },
     },
